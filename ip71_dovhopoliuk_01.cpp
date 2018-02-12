@@ -7,7 +7,7 @@ int main(int argc, char* argv[]){
   ofstream fout("ip71_dovhopoliuk_01_output.txt");
   int len;
   fin>>len;
-  int arr[len];
+  int *arr = new int(len);
   for(int i = 0; i < len; i++){
     fin>>arr[i];
   }
